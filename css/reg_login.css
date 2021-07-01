@@ -1,0 +1,37 @@
+/* separate design for register and login site */
+body{
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* containers */
+.formContainer{
+    display:flex;
+    justify-content: space-between;
+    background:rgba(63, 91, 36, 0.75);
+    padding:0.25em;
+}
+section{
+    border-bottom:solid 1px var(--solid-bg-color);
+}
+/* or text position */
+.orH2{
+    margin-left:1.5em;
+    margin-right:1.5em;
+    align-self: center;
+    justify-self: center;
+}
+/* icon to toggle password visibility */
+.eye{
+    position: relative;
+    left:85%;
+}
+/* media queries for responsive design */
+@media screen and (max-width:650px){
+    .sitetitle{
+        font-size:10vw;
+    }
+    .formContainer{
+        flex-direction: column;
+    }
+}

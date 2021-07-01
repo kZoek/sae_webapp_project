@@ -1,0 +1,135 @@
+/* import colors and fonts */
+@import url("font_and_color.css");
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+/* body style */
+body{
+    background-color:var(--strong-bg-color);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navigation style */
+nav{
+    position: relative;
+    width: 100%;
+    background-color: var(--solid-bg-color);
+    box-shadow:0 0 6px var(--second-shadow-color);
+}
+nav > ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+nav > ul > li > a{
+    font-size:1.85rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px var(--shadow-color);
+    transition: 0.5s;
+}
+a:hover{
+    color: var(--shadow-color);
+}
+/* nav style handy screen smaller than 500px */
+@media screen and (max-width:499px){
+    nav > ul > li > a{
+        font-size:1.5rem;
+    }
+}
+@media screen and (max-width:399px){
+    nav > ul > li > a{
+        font-size:1.25rem;
+    }
+}
+/* title style */
+.title{
+    margin-bottom:4em;
+    background-image: url("images/background.png");
+    background-size: cover;
+    width:100%;
+    padding-bottom: 3em;
+    box-shadow:1px 0px 3px var(--shadow-color);
+}
+.sitetitle{
+    font-size:5.5rem;
+    text-shadow: 4px 4px 6px beige;
+    text-align: center;
+    
+}
+/* title on smaller screens */
+@media screen and (max-width:450px){
+    .sitetitle{
+        font-size:20vw;
+    }
+}
+/* sections design */
+section{
+    position: relative;
+    max-width:80vw;
+    min-width:20vw;
+    margin-top:2em;
+    margin-bottom:2em;
+    border-top:solid 1px var(--solid-bg-color);
+}
+section:last-of-type{
+    border-bottom:solid 1px var(--solid-bg-color);
+}
+/* timestamp for newsfeed */
+.timestamp{
+    color: rgb(181, 218, 175);
+}
+/* form style */
+form{
+    display:flex;
+    flex-direction: column;
+}
+form > input,label {
+    margin:0.15em;
+}
+.submitButton{
+    justify-self: center;
+    align-self: center;
+    transition: 0.5s;
+    background:none;
+}
+.submitButton:hover{
+    color: var(--title-color);
+    text-shadow: 0px 0px 3px beige;
+    transform: scale(1.15);
+}
+/* footer style */
+footer{
+    position: relative;
+    align-self: flex-end;
+    width:100%;
+    background-color:rgba(154, 165, 63, 0.5);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:1em;
+}
+
+.toSmw{
+    font-size:1.5rem;
+    margin:0.25em;
+    transition:0.5s;
+}
+
+.toTopbtn{
+    font-size:1.75rem;
+    margin:0.25em;
+    transition:0.5s;
+    background:none;
+}
+.toTopbtn:hover,.toSmw:hover,.editButton:hover{
+    color: var(--shadow-color);
+    text-shadow: 0px 0px 3px beige;
+}
+.smTitle{
+    text-align: center;
+}

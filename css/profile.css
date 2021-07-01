@@ -1,0 +1,29 @@
+@import url("font_and_color.css");
+
+/* separate design for profile site */
+.about{
+    padding:0.5em;
+    background-color: rgba(154, 165, 63, 0.5);
+}
+.card{
+    border-bottom: solid 2px var(--strong-bg-color);
+}
+.card:last-of-type{
+    border:none;
+}
+/* toggle class to hide menus */
+.hiddenmenu{
+    display:none;
+}
+.edit-profile > .card{
+    display:flex;
+    flex-direction: column;
+}
+.editButton{
+    margin:0.25em;
+    transition:0.5s;
+    background:none;
+}
+.fa-user-edit{
+    font-size:2rem;
+}

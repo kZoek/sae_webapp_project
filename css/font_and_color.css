@@ -1,0 +1,102 @@
+/* variables for font and colors */
+:root{
+/* font choice for the homepage */   
+/* normal text */
+--plain-font-family: 'Fanwood Text', serif;
+/* semi title text */
+--semi-font-family: 'Do Hyeon', sans-serif;
+/* big title text */
+--title-font-family: 'Holtwood One SC', serif;    
+/* error message text */
+--error-font-family: 'Acme', sans-serif;
+
+/* basic color schema */
+/* text colors */
+--plaintext-color:#D9AD77; 
+--title-color:#8C3926;
+/* background colors */
+--strong-bg-color:#405C25; 
+--solid-bg-color:#9AA63F;
+--shadow-color:#735449;
+--second-shadow-color: beige;
+}
+
+/* fontsize for the whole site */
+body{
+    font-size:16px;
+}
+/* default set of font and color for text elementss */
+/* titles */
+h1,h2,h3{
+    font-family: var(--title-font-family);
+    color:var(--title-color);
+    text-shadow: 0px 0px 3px beige;
+}
+h3{
+font-size:1.75rem;
+}
+h4,h5,h6{
+    font-family: var(--semi-font-family);
+    color:var(--title-color);
+    /* text-shadow: -4px -4px 1px beige; */
+    text-shadow: 0px 0px 1px beige;
+}
+/* overall text elements */
+p,a,label,input,button,textarea,span{
+    font-family: var(--plain-font-family);
+    color: var(--plaintext-color);
+    text-shadow: 1px 1px 3px var(--shadow-color);
+    font-size:1.5rem;
+    text-decoration: none;
+}
+nav  a{
+    color:var(--title-color);
+}
+input,button,textarea{
+    background-color: var(--solid-bg-color);
+    border:none;
+}
+select,option{
+    font-family: var(--plain-font-family);
+    color: var(--plaintext-color);
+    background-color: var(--strong-bg-color);
+    font-size:1.25rem;
+}
+ul{
+    list-style:none;
+}
+
+/* element classes */
+/* card titles */
+.card-title{
+    font-family: var(--semi-font-family);
+    color:var(--title-color);
+    font-size:1.5rem;
+    text-shadow: 0px 0px 3px beige;
+}
+/* popup messages if the user did something */
+/* .register-message > p , .login-message > p{
+    font-family: var(--error-font-family);
+    color:rgb(240, 154, 154);
+} */
+.errorMessage{
+    font-family: var(--error-font-family);
+    color:rgb(240, 154, 154);
+}
+.successMessage{
+    font-family: var(--error-font-family);
+    color: rgb(30, 95, 19);
+    text-shadow: 0 0 3px beige;
+}
+/* selected text color */
+::selection{
+    color:var(--solid-bg-color);
+    background-color: rgba(114, 84, 73, 0.5);
+}
+/* font size in sections */
+section > h1,h2{
+font-size:2.2rem;
+}
+section > h4,h5,h6{
+font-size:1.5rem;
+}
